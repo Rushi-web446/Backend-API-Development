@@ -4,3 +4,30 @@
 connection
 
 user_connection
+
+
+/use 
+
+
+{
+    "data": {
+        "name": "Rahul Sharma",
+        "email": "abc@example.com",
+        "_id": "6a4771b1e9661d0a9651332b",
+        "createdAt": "2026-07-03T08:24:17.129Z",
+        "updatedAt": "2026-07-03T08:24:17.129Z",
+        "__v": 0
+    }
+}
+
+
+{
+    "data": {
+        "name": "Rushi Sharma",
+        "email": "aaa@example.com",
+        "_id": "6a4771cee9661d0a9651332c",
+        "createdAt": "2026-07-03T08:24:46.107Z",
+        "updatedAt": "2026-07-03T08:24:46.107Z",
+        "__v": 0
+    }
+}

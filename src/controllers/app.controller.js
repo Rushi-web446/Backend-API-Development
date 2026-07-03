@@ -102,7 +102,7 @@ exports.handleConnectRespond = async (req, res) => {
 exports.handleRates = async (req, res) => {
     try {
         const myId = req.headers['current_user_id'];
-        const obj = req.body;
+        let obj = req.body;
 
         obj.add("userId", myId);
 
