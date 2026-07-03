@@ -1,21 +1,26 @@
 const mongoose = require("mongoose");
 
-const userScheema = new mongoose.Schema({
+const userConnScheema = new mongoose.Schema({
 
-    name:{
+    from:{
         type:String,
         required:true,
         trim:true
     },
 
-    email:{
+    to:{
         type:String,
         required:true,
         lowercase:true,
         unique:true
     },
 
+    status:{
+        type:String,
+        enum:["Pending", "Accepted", "Rejected"]
+    }
+    
 }, {timestamps:true});
 
 
-module.exports = mongoose.model("User", userScheema);
+module.exports = mongoose.model("User_Conn", userConnScheema);

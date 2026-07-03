@@ -9,14 +9,18 @@ app.use(express.json());
 const PORT = process.env.PORT || 5000;
 
 const connectDB = require("./src/config/db");
+const appRoutes = require("./src/routes/app.routs");
 
 
 connectDB();
 
-app.get("/", (req, res) => {
-    res.send("\n\nserver is running\n\n");
+app.get("/test", (req, res) => {
+    res.send("\n\nserver is jjjjjjjjjjjjjjjjjj running\n\n");
 });
 
+
+
+app.use("/", appRoutes);
 
 
 
